@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2a1454;
+}
+
+.wrapper{
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.wrapper .passwordBox{
+    position: relative;
+    height: 50px;
+    }
+
+.passwordBox input{
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    bottom: 1px solid #aaa;
+    padding: 0 45px 0 15px;
+
+}
+
+.copyIcon{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    color: #707070;
+    font-style: 20px;
+    cursor: pointer;
+    transform: translateY(-50%);
+
+}
+
+.copyIcon:hover{
+    color: #2a1454;
+
+}
+
+.wrapper .rangeBox{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.rangeBox input{
+    width: 100%;
+    height: 5px;
+    accent-color: #7e4bdd;
+    cursor: pointer;
+   
+}
+
+.rangeBox input:hover{
+     
+    accent-color: #6126ce;
+   
+}
+.rangeBox .sliderNumber{
+    min-width: 30px;
+    text-align: right;
+    font-style: 17px;
+    color: #707070;
+   
+}
+.wrapper .genrateButton{
+    width: 100%;
+    padding: 12px 0;
+    margin-top: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    background-color: #927dfc;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.genrateButton:hover{
+    background-color: #826afb;
+}
