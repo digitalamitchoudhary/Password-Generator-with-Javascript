@@ -4,7 +4,9 @@ rangeInput = document.querySelector(".rangeBox input"),
 sliderNumber = document.querySelector(".rangeBox .sliderNumber"),
 generateButton = document.querySelector(".genrateButton");
 
+
 // console.log(passwordInput, copyIcon, rangeInput, sliderNumber, generateButton);
+
 
 
 //Characters of alphabet(a-z/A-Z), numbers (0-9) and Symbols($%&[]...)
@@ -18,18 +20,30 @@ const generatPassword = () => {
         let randomNumbers = Math.floor(Math.random() * allCharacters.length );
         newPassword += allCharacters[randomNumbers];
         // console.log(allCharacters[randomNumbers]);
-        
-        
-        
+         
      }
-     console.log(newPassword);
+    //  console.log(newPassword);
+     passwordInput.value = newPassword;
+         copyIcon.classList.replace("uil-file-check-alt","uil-copy" )
+
 
 
 }
 
 rangeInput.addEventListener("input",()=>{
     sliderNumber.innerText = rangeInput.value;
+    generatPassword();
 })
 
+copyIcon.addEventListener('click',()=>{
+    // console.log(passwordInput.value);
+    copyIcon.classList.replace("uil-copy", "uil-file-check-alt")
+    navigator.clipboard.writeText(passwordInput.value)
+})
+
+ generatPassword();
 
 generateButton.addEventListener('click', generatPassword);
+
+
+ 

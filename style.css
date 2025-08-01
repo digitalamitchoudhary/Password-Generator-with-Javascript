@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
 
@@ -8,7 +8,7 @@
     font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -16,9 +16,10 @@ body{
     background-color: #2a1454;
 }
 
-.wrapper{
+.wrapper {
+   
     position: relative;
-    max-width: 300px;
+    max-width: 550px;
     width: 100%;
     background: #fff;
     border-radius: 12px;
@@ -26,67 +27,85 @@ body{
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.wrapper .passwordBox{
+.wrapper .passwordBox {
     position: relative;
-    height: 50px;
-    }
+    height: 60px;
 
-.passwordBox input{
+}
+
+.passwordBox input {
     height: 100%;
     width: 100%;
     border-radius: 8px;
     bottom: 1px solid #aaa;
     padding: 0 45px 0 15px;
+    font-size: 20px;
 
 }
 
-.copyIcon{
+.copyIcon {
     position: absolute;
     right: 15px;
     top: 50%;
     color: #707070;
-    font-style: 20px;
+    font-size: 30px;
     cursor: pointer;
     transform: translateY(-50%);
 
 }
 
-.copyIcon:hover{
+.copyIcon:hover {
     color: #2a1454;
 
 }
 
-.wrapper .rangeBox{
+.wrapper .rangeBox {
     display: flex;
     align-items: center;
     margin-top: 20px;
 }
+ 
+ 
+ 
 
-.rangeBox input{
+/* .rangeBox input {
     width: 100%;
-    height: 5px;
+    height: 50px;
+    
     accent-color: #7e4bdd;
     cursor: pointer;
-   
+
+} */
+ input[type="range"] {
+  -webkit-appearance:none;
+  width: 100%;
+  height: 12px; /* Overall height, but not enough alone */
+  background: #ddd;
+  border-radius: 6px;
+  outline: none;
+      accent-color: #7e4bdd;
+
+}
+.rangeBox input:hover {
+
+    accent-color: #6126ce;
+
 }
 
-.rangeBox input:hover{
-     
-    accent-color: #6126ce;
-   
-}
-.rangeBox .sliderNumber{
+.rangeBox .sliderNumber {
     min-width: 30px;
     text-align: right;
     font-style: 17px;
     color: #707070;
-   
+
 }
-.wrapper .genrateButton{
+
+.wrapper .genrateButton {
     width: 100%;
     padding: 12px 0;
     margin-top: 20px;
     color: #fff;
+    font-size: 20px;
     border: none;
     border-radius: 8px;
     background-color: #927dfc;
@@ -94,6 +113,35 @@ body{
     transition: all 0.2s ease;
 }
 
-.genrateButton:hover{
+.genrateButton:hover {
     background-color: #826afb;
+}  
+ 
+
+
+    /* Footer styling */
+.su {
+    position: absolute;
+    bottom: 50px; /* Keeps it 50px from the bottom */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+/* Custom link styling */
+.custom-link {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.custom-link .heart {
+    color: red;
+}
+
+/* Hover effect on the footer link */
+.custom-link:hover {
+    text-decoration: underline;
 }
