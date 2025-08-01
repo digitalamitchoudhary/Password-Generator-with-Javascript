@@ -4,8 +4,7 @@ We’ve all been there — signing up for a new account, stuck trying to come up
 
 This project is a simple, no-nonsense **Password Generator** built using HTML, CSS, and JavaScript. It helps you create strong, random, and secure passwords with just one click.
 
-No ads. No tracking. Just one clean interface that does exactly what it promises.
-
+ 
 ---
 
 ## 💡 Why I Built This
