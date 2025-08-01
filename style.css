@@ -17,7 +17,7 @@ body {
 }
 
 .wrapper {
-   
+   margin: 10px;
     position: relative;
     max-width: 550px;
     width: 100%;
@@ -25,6 +25,12 @@ body {
     border-radius: 12px;
     padding: 30px 25px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.wrapper h1{
+    font-size: 1.5em;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 .wrapper .passwordBox {
